@@ -62,5 +62,3 @@ To start the FastAPI application, run the following command:
 ```bash
 uvicorn main:app --reload
 ```
-**Note:** Ensure that your `main.py` file contains the FastAPI app instance named `app`.
-```
