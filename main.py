@@ -14,4 +14,9 @@ app = FastAPI(
     docs_url="/docs" if settings.ENV != "production" else None
     )
 
+@app.get('/')
+def hello_world():
+    return "Hello,World"
+
+
 app.include_router(api_router, prefix=settings.API_PREFIX)
